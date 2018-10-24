@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Javascript Global Variable</title>
+	<title>Javascript Display Possibilities</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
@@ -10,25 +10,25 @@
 	
 	<section class="content">
 		<div class="header">
-			<h2><script>document.write("Javascript Global Variable")</script></h2>
+			<h2><script>document.write("Javascript Display Possibilities")</script></h2>
 		</div>
 		<div class="maincontent">
-			<script>
-				document.write("<br>");
-				var color="green";//global variable
-				function functionone(){
-					window.color="red";//now this is global variable
-					//color="red"; this is also global variable
-					document.write("Inside function color is: "+color);
-				}
-				functionone();
-				document.write("<br>");
-				document.write(" Outside function color is: "+color);
+			<div id="show">
 				
+			</div>
+			<script>
+				//innerHTML,document.write(),window.alert(),console.log(),alert()
+				var a="Shahnaouz";
+				var b="Razu";
+				var myname=a+" "+b;
+				document.getElementById("show").innerHTML=myname;
+				//document.write(myname);
+				//window.alert(myname);
+				//console.log(myname);
 			</script>
 		</div>
 		<div class="footer">
-			<h2><script>document.write("Javascript Global Variable")</script></h2>
+			<h2><script>document.write("Javascript Display Possibilities")</script></h2>
 		</div>
 	</section>
 </body>
