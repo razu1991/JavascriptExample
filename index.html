@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Javascript Array Info</title>
+	<title>Javascript Object Info</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
@@ -10,42 +10,30 @@
 	
 	<section class="content">
 		<div class="header">
-			<h2><script>document.write("Javascript Array Info")</script></h2>
+			<h2><script>document.write("Javascript Object Info")</script></h2>
 		</div>
 		<div class="maincontent">
 			<script>
-				var arr1= [1,2,3,4,5];
-				var arr2= [4,5,6,7,8];
-				var getarr = arr1.concat(arr2);
-				document.write(getarr);
+				var myname= new String("Md. Shahnaouz Razu");
+				var mynum=new Number(123456);
+				document.write(typeof(mynum));
 				document.write("<br>");
-				var color=["Green","Blue","Purple","Red"];
-				document.write("Before Sorting : "+color+"<br>");
-				color.sort();
-				document.write("After Sorting : "+color);
-				document.write("<br>");
-				var num=[10,1020,50,30,80,70,95];
-				document.write("Before Sorting : "+num+"<br>");
-				num.sort();
-				function arrsort(x,y){
-					return (y-x);
+				var person={
+					firstName:"Shahnaouz",
+					lastName:"Razu",
+					age:27,
+					func:function(){
+						return this.firstName+this.lastName;
+					}
 				}
-				num.sort(arrsort);
-				document.write("After Sorting : "+num);
+				document.write(person.func());
 				document.write("<br>");
-				var num=[10,1020,50,30,35,70,85];
-				num[num.length]="5000";
-				document.write(num);
-				document.write("<br>");
-				var num=[10,1020,50,30,35,70,85];
-				num.unshift(90);
-				num.pop();
-				num.push(33);
-				document.write(num);
+				document.write(person.age);
+
 			</script>
 		</div>
 		<div class="footer">
-			<h2><script>document.write("Javascript Array Info")</script></h2>
+			<h2><script>document.write("Javascript Object Info")</script></h2>
 		</div>
 	</section>
 </body>
