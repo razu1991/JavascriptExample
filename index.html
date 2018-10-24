@@ -14,21 +14,20 @@
 		</div>
 		<div class="maincontent">
 			<script>
-				var myname= new String("Md. Shahnaouz Razu");
-				var mynum=new Number(123456);
-				document.write(typeof(mynum));
-				document.write("<br>");
-				var person={
-					firstName:"Shahnaouz",
-					lastName:"Razu",
-					age:27,
-					func:function(){
-						return this.firstName+this.lastName;
-					}
-				}
-				document.write(person.func());
-				document.write("<br>");
-				document.write(person.age);
+				var a="hello";
+				document.write(typeof(a)+"<br>");//show string
+				var b= {name:"Razu",age:30}
+				document.write(typeof(b)+"<br>");//show object
+				var c= [1,23,45];
+				document.write(typeof(c)+"<br>");//this array also show object in javascript
+				var d=null;
+				document.write(typeof(d)+"<br>");//this null also object type
+				var e;
+				document.write(typeof(e)+"<br>");//show undefined data type
+				var f=true;
+				document.write(typeof(f)+"<br>");//show boolean data type
+				var g=123;
+				document.write(typeof(g)+"<br>");//show number datatype
 
 			</script>
 		</div>
