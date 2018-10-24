@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Javascript Variables</title>
+	<title>Javascript Global Variable</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
@@ -10,23 +10,25 @@
 	
 	<section class="content">
 		<div class="header">
-			<h2><script>document.write("Javascript Variables")</script></h2>
+			<h2><script>document.write("Javascript Global Variable")</script></h2>
 		</div>
 		<div class="maincontent">
 			<script>
-				var myname="Md. Karin";
-				document.write(myname);
 				document.write("<br>");
-				var a=10; //declare variable in javascript
-				var b=10; //declare variable in javascript
-				var sum=a+b; //declare variable in javascript & summation
-				var pro=a*b; //declare variable in javascript & multiplication
-				var div=a/b; //declare variable in javascript & division
-				document.write("Sub is: " +sum+"	Product is "+pro+"	Division is: "+div); //show variable value in javascript
+				var color="green";//global variable
+				function functionone(){
+					window.color="red";//now this is global variable
+					//color="red"; this is also global variable
+					document.write("Inside function color is: "+color);
+				}
+				functionone();
+				document.write("<br>");
+				document.write(" Outside function color is: "+color);
+				
 			</script>
 		</div>
 		<div class="footer">
-			<h2><script>document.write("Javascript Variables")</script></h2>
+			<h2><script>document.write("Javascript Global Variable")</script></h2>
 		</div>
 	</section>
 </body>
