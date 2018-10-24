@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Javascript Display Possibilities</title>
+	<title>Javascript Console Info</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
@@ -10,25 +10,23 @@
 	
 	<section class="content">
 		<div class="header">
-			<h2><script>document.write("Javascript Display Possibilities")</script></h2>
+			<h2><script>document.write("Javascript Console Info")</script></h2>
 		</div>
 		<div class="maincontent">
-			<div id="show">
-				
-			</div>
 			<script>
-				//innerHTML,document.write(),window.alert(),console.log(),alert()
-				var a="Shahnaouz";
-				var b="Razu";
-				var myname=a+" "+b;
-				document.getElementById("show").innerHTML=myname;
-				//document.write(myname);
-				//window.alert(myname);
-				//console.log(myname);
+				console.log("Md. Shahnaouz Razu");
+				console.info("%s","You have a message");
+				console.warn("Do you go here");
+				console.error("Its is undefined");
+				console.time("Check Time");
+				var sum =5+2;
+				console.log(sum);
+				console.timeEnd("Check Time");
+				copy("test");//this function only use in console
 			</script>
 		</div>
 		<div class="footer">
-			<h2><script>document.write("Javascript Display Possibilities")</script></h2>
+			<h2><script>document.write("Javascript Console Info")</script></h2>
 		</div>
 	</section>
 </body>
