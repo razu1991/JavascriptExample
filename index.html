@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Javascript Console Info</title>
+	<title>Javascript Array Info</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
@@ -10,23 +10,42 @@
 	
 	<section class="content">
 		<div class="header">
-			<h2><script>document.write("Javascript Console Info")</script></h2>
+			<h2><script>document.write("Javascript Array Info")</script></h2>
 		</div>
 		<div class="maincontent">
 			<script>
-				console.log("Md. Shahnaouz Razu");
-				console.info("%s","You have a message");
-				console.warn("Do you go here");
-				console.error("Its is undefined");
-				console.time("Check Time");
-				var sum =5+2;
-				console.log(sum);
-				console.timeEnd("Check Time");
-				copy("test");//this function only use in console
+				var arr1= [1,2,3,4,5];
+				var arr2= [4,5,6,7,8];
+				var getarr = arr1.concat(arr2);
+				document.write(getarr);
+				document.write("<br>");
+				var color=["Green","Blue","Purple","Red"];
+				document.write("Before Sorting : "+color+"<br>");
+				color.sort();
+				document.write("After Sorting : "+color);
+				document.write("<br>");
+				var num=[10,1020,50,30,80,70,95];
+				document.write("Before Sorting : "+num+"<br>");
+				num.sort();
+				function arrsort(x,y){
+					return (y-x);
+				}
+				num.sort(arrsort);
+				document.write("After Sorting : "+num);
+				document.write("<br>");
+				var num=[10,1020,50,30,35,70,85];
+				num[num.length]="5000";
+				document.write(num);
+				document.write("<br>");
+				var num=[10,1020,50,30,35,70,85];
+				num.unshift(90);
+				num.pop();
+				num.push(33);
+				document.write(num);
 			</script>
 		</div>
 		<div class="footer">
-			<h2><script>document.write("Javascript Console Info")</script></h2>
+			<h2><script>document.write("Javascript Array Info")</script></h2>
 		</div>
 	</section>
 </body>
